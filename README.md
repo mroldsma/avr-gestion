@@ -1,1 +1,1 @@
-## proyecto para AVR Gestion de Seguros
+## Proyecto para AVR Gestion de Seguros
