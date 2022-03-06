@@ -13,6 +13,9 @@
     <!-- animate.css animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
     <title>AVR Gestión</title>
 
     <!-- inspiration template -->
@@ -123,16 +126,16 @@
       <div class="container-fluid bg-secondary p-5 mt-4">
         <div class="row">
           <div class="col-3">
-            <img src="images/undraw_cabin_hkfr.png" alt="" class="img-fluid">
+            <img src="images/examplelogo.png" alt="" class="img-fluid">
           </div>
           <div class="col-3">
-            <img src="images/undraw_cabin_hkfr.png" alt="" class="img-fluid">
+            <img src="images/examplelogo.png" alt="" class="img-fluid">
           </div>
           <div class="col-3">
-            <img src="images/undraw_cabin_hkfr.png" alt="" class="img-fluid">
+            <img src="images/examplelogo.png" alt="" class="img-fluid">
           </div>
           <div class="col-3">
-            <img src="images/undraw_cabin_hkfr.png" alt="" class="img-fluid">
+            <img src="images/examplelogo.png" alt="" class="img-fluid">
           </div>
         </div>
       </div>
@@ -142,11 +145,53 @@
     <!-- contact section -->
 
     <section id="contact">
-      <div class="container my-4">
+      <div class="container py-5">
 
-        <h2>Contactenos</h2>
+        <h2 class="d-flex justify-content-center text-white pb-4">Contactenos</h2>
         <div class="row">
-          <div class="col-6">
+          <!-- contact info -->
+          <div class="col-md-12 col-lg-6 d-flex flex-column text-white align-items-start">
+            
+            <!-- start -->
+            <div class="contact-info d-flex m-3">
+              <div class="contact-info-icon m-3 d-flex align-items-center bg-white justify-content-center">
+                <i class="bi bi-telephone-fill text-primary"></i>
+              </div>
+              <div class="contact-info-text mx-4 mt-3 d-flex flex-column justify-content-center">
+                <h5 class="text-primary">Direccion</h5>
+                <p>calle ejemplo, numero 000</p>
+              </div>
+            </div>
+            <!-- end -->
+            
+            <!-- start -->
+            <div class="contact-info d-flex m-3">
+              <div class="contact-info-icon m-3 d-flex align-items-center bg-white justify-content-center">
+                <i class="bi bi-telephone-fill text-primary"></i>
+              </div>
+              <div class="contact-info-text mx-4 mt-3 d-flex flex-column justify-content-center">
+                <h5 class="text-primary">Email</h5>
+                <p>mail@ejemplo.com</p>
+              </div>
+            </div>
+            <!-- end -->
+
+            <!-- start -->
+            <div class="contact-info d-flex m-3">
+              <div class="contact-info-icon m-3 d-flex align-items-center bg-white justify-content-center">
+                <i class="bi bi-telephone-fill text-primary"></i>
+              </div>
+              <div class="contact-info-text mx-4 mt-3 d-flex flex-column justify-content-center">
+                <h5 class="text-primary">Telefono</h5>
+                <p>+54 11 2222-2222</p>
+              </div>
+            </div>
+            <!-- end -->
+
+          </div>
+
+          <!-- contact form -->
+          <div class="col-md-12 col-lg-6 bg-white p-3 mw-100">
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre</label>
               <input class="form-control" id="nombre" type="text" placeholder="Escriba su nombre" aria-label="nombre">
@@ -164,6 +209,37 @@
               <textarea class="form-control" id="mensaje" rows="3" style="height: 10em;"></textarea>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- footer section -->
+    <section id="footer">
+      <div class="container-fluid bg-dark">
+        <div class="row py-4">
+
+          <div class="col-sm-12 col-md-4 d-flex justify-content-center">
+            <h2 class="fw-bold text-white">AVR SEGUROS</h2>
+          </div>
+
+          <div class="col-sm-12 col-md-4">
+            <h3 class="text-white ps-3">nuestros seguros</h3>
+            <div class="list-group list-group-flush">
+              <a href="" class="list-group-item list-group-item-action bg-transparent text-white">seguro automotor</a>
+              <a href="" class="list-group-item list-group-item-action bg-transparent text-white">seguro para empresas</a>
+              <a href="" class="list-group-item list-group-item-action bg-transparent text-white">seguro inmobiliario</a>
+              <a href="" class="list-group-item list-group-item-action bg-transparent text-white">seguro de animales</a>
+              <a href="" class="list-group-item list-group-item-action bg-transparent text-white">seguro de vida</a>
+            </div>
+          </div>
+
+          <div class="iconos-footer col-sm-12 col-md-4 text-black d-flex justify-content-evenly align-items-center">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-whatsapp"></i>
+          </div>
+
         </div>
       </div>
     </section>

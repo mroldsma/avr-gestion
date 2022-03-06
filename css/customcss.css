@@ -1,6 +1,7 @@
 #hero{
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/carousel2.jpg');
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .titulo{
@@ -19,4 +20,26 @@
 .card-img-top{
   width: 100%;
   height: 100%;
+}
+
+#marcas img{
+  max-height: 25vh;
+}
+
+#contact{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/beachcity.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.contact-info-icon{
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  font-size: 1.5em;
+}
+
+.iconos-footer{
+  font-size: 3rem;
 }
