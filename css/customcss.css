@@ -1,0 +1,22 @@
+#hero{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/carousel2.jpg');
+  background-size: cover;
+}
+
+.titulo{
+  position: relative;
+}
+
+.linea{
+  position: absolute;
+  height: 5px;
+  background-color: transparent;
+  width: 15%;
+  top: 120%;
+
+}
+
+.card-img-top{
+  width: 100%;
+  height: 100%;
+}
