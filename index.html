@@ -15,6 +15,8 @@
 
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- AOS animations -->
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
 
     <title>AVR Gestión</title>
 
@@ -27,23 +29,24 @@
   <body>
     
     <!-- navbar  -->
-
     <nav class="navbar fixed-top navbar-expand-lg navbar-light p-3 bg-light shadow">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">AVR Gestión</a>
+        <a class="navbar-brand fw-bold" href="#">AVR Gestión</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="mx-auto"></div>
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">inicio</a>
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">servicios</a>
+              <a class="nav-link" href="#">Seguros</a>
             </li>
-            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
             
           </ul>
           
@@ -54,12 +57,14 @@
 
     <!-- hero section -->
     <section id="hero">
-      <div class="container w-100 vh-100 d-flex">
-        <div class="row pt-5 align-items-center">
-          <div class="col-8 d-flex flex-column">
-            <h1 class="display-2 fw-bold text-white">expertos en seguros</h1>
-            <p class="text-white pt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur vero nulla consequatur mollitia dolorum soluta tenetur sit doloribus quo blanditiis.</p>
-            <button class="btn btn-primary">Ver Más</button>
+      <div class="container vh-100 d-flex">
+        <div class="row align-items-center pt-5">
+          <div class="col-sm-12 col-md-8 d-flex flex-column">
+            <h1 class="display-2 fw-bold text-white pb-3">Expertos en Seguros</h1>
+            <p class="text-white">texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba</p>
+            <div>
+              <button type="button" class="btn btn-primary px-5 py-2 shadow fw-bold">Ver Más</button>
+            </div>
           </div>
         </div>
       </div>
@@ -67,18 +72,17 @@
 
 
     <!-- our services section -->
-
     <section id="servicios">
       <div class="container">
-        <div class="titulo mb-5">
-          <h2 class="animate__animated animate__fadeInUp animate__slow">nuestros seguros</h2>
-          <div class="linea bg-primary animate__animated animate__fadeInUp animate__slow"></div>
+        <div class="titulo my-4">
+          <h2 class="animate__animated animate__fadeInUp animate__slow">Nuestros Seguros</h2>
+          <div class="linea bg-primary"></div>
         </div>
 
         <div class="row">
 
           <!-- starts card -->
-          <div class="col-sm-12 col-md-6 col-lg-4 m-auto">
+          <div class="col-sm-12 col-md-6 col-lg-4 mx-auto my-2">
             <div class="card h-100 shadow">
               <img src="images/undraw_by_my_car_ttge.png" alt="" class="card-img-top">
               <div class="card-body">
@@ -91,7 +95,7 @@
         <!-- ends card -->
 
         <!-- starts card -->
-        <div class="col-sm-12 col-md-6 col-lg-4 m-auto">
+        <div class="col-sm-12 col-md-6 col-lg-4 mx-auto my-2">
           <div class="card h-100 shadow">
             <img src="images/services-road.png" alt="" class="card-img-top">
             <div class="card-body">
@@ -104,7 +108,7 @@
       <!-- ends card -->
 
         <!-- starts card -->
-        <div class="col-sm-12 col-md-6 col-lg-4 m-auto">
+        <div class="col-sm-12 col-md-6 col-lg-4 mx-auto my-2">
           <div class="card h-100 shadow">
             <img src="images/services-work.png" alt="" class="card-img-top">
             <div class="card-body">
@@ -125,18 +129,19 @@
     <section id="marcas">
       <div class="container-fluid bg-secondary p-5 mt-4">
         <div class="row">
-          <div class="col-3">
-            <img src="images/examplelogo.png" alt="" class="img-fluid">
+          <div class="col-sm-12 col-md-3">
+            <h2 class="text-center pb-3">Trabajamos con las mejores marcas</h2>
           </div>
-          <div class="col-3">
+
+          <div class="col-sm-12 col-md-9 d-flex justify-content-around flex-wrap">
+            <img src="images/examplelogo.png" alt="" class="img-fluid m-1">
             <img src="images/examplelogo.png" alt="" class="img-fluid">
-          </div>
-          <div class="col-3">
             <img src="images/examplelogo.png" alt="" class="img-fluid">
-          </div>
-          <div class="col-3">
             <img src="images/examplelogo.png" alt="" class="img-fluid">
+            
           </div>
+            
+
         </div>
       </div>
     </section>
@@ -148,6 +153,7 @@
       <div class="container py-5">
 
         <h2 class="d-flex justify-content-center text-white pb-4">Contactenos</h2>
+        
         <div class="row">
           <!-- contact info -->
           <div class="col-md-12 col-lg-6 d-flex flex-column text-white align-items-start">
@@ -155,7 +161,7 @@
             <!-- start -->
             <div class="contact-info d-flex m-3">
               <div class="contact-info-icon m-3 d-flex align-items-center bg-white justify-content-center">
-                <i class="bi bi-telephone-fill text-primary"></i>
+                <i class="bi bi-geo-alt-fill text-primary"></i>
               </div>
               <div class="contact-info-text mx-4 mt-3 d-flex flex-column justify-content-center">
                 <h5 class="text-primary">Direccion</h5>
@@ -167,7 +173,7 @@
             <!-- start -->
             <div class="contact-info d-flex m-3">
               <div class="contact-info-icon m-3 d-flex align-items-center bg-white justify-content-center">
-                <i class="bi bi-telephone-fill text-primary"></i>
+                <i class="bi bi-envelope-fill text-primary"></i>
               </div>
               <div class="contact-info-text mx-4 mt-3 d-flex flex-column justify-content-center">
                 <h5 class="text-primary">Email</h5>
@@ -191,7 +197,7 @@
           </div>
 
           <!-- contact form -->
-          <div class="col-md-12 col-lg-6 bg-white p-3 mw-100">
+          <div class="col-md-12 col-lg-6 bg-white p-3 mw-100 rounded">
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre</label>
               <input class="form-control" id="nombre" type="text" placeholder="Escriba su nombre" aria-label="nombre">
@@ -208,6 +214,7 @@
               <label for="mensaje" class="form-label">Mensaje</label>
               <textarea class="form-control" id="mensaje" rows="3" style="height: 10em;"></textarea>
             </div>
+            <button type="submit" class="btn btn-primary w-100 py-2">Enviar</button>
           </div>
         </div>
       </div>
@@ -215,6 +222,9 @@
 
 
     <!-- footer section -->
+
+    <!-- TODO datos de la afip , ssn , etc ... -->
+
     <section id="footer">
       <div class="container-fluid bg-dark">
         <div class="row py-4">
@@ -258,10 +268,15 @@
 
 
 
+    
+    <!-- AOS animation script -->
+      <script src="bower_components/aos/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    
     <!-- Bootstrap Bundle with Popper -->
     <script src="bootstrap/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- custom js -->
-    <script src="app.js"></script>
   
   </body>
 </html>

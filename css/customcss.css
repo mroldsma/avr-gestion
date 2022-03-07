@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
 #hero{
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/carousel2.jpg');
   background-size: cover;
@@ -10,11 +16,12 @@
 
 .linea{
   position: absolute;
-  height: 5px;
+  height: 4px;
   background-color: transparent;
-  width: 15%;
+  width: 12%;
   top: 120%;
-
+  transform: scaleX(1);
+  transition: all 1s ease-in;
 }
 
 .card-img-top{
@@ -23,11 +30,11 @@
 }
 
 #marcas img{
-  max-height: 25vh;
+  max-height: 8rem;
 }
 
 #contact{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/beachcity.jpg');
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/contact.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
