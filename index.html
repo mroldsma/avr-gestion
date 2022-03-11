@@ -10,13 +10,12 @@
     <!-- custom CSS -->
     <link rel="stylesheet" href="css/customcss.css">
 
-    <!-- animate.css animations -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <!-- AOS animations -->
-    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    
 
     <title>AVR Productora Asesora de Seguros</title>
 
@@ -29,9 +28,12 @@
   <body>
     
     <!-- navbar  -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light p-4 bg-light shadow">
+
+        <!-- TODO animaciones de AOS .. https://michalsnik.github.io/aos/ -->
+        <!-- TODO animaciones de los links del navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">AVR Productora</a>
+        <a class="navbar-brand fw-bold" href="#">AVR Productora Asesora de Seguros</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,7 +52,7 @@
             
           </ul>
           
-          <button type="button" class="btn btn-lg btn-info text-center fw-bold mx-3"><a href="#">Cotize Ahora</a></button>
+          <button type="button" class="btn btn-info text-center fw-bold mx-3"><a href="#">COTIZE AHORA</a></button>
         </div>
 
       </div>
@@ -58,15 +60,25 @@
 
 
     <!-- hero section -->
-    <section id="hero">
-      <div class="container vh-100 d-flex">
+
+    <!-- TODO  ajustar en pantallas muy grandes cuando vaya a la oficina -->
+    <section id="hero" class="mt-3 bg-secondary">
+      <div class="container vh-100 d-flex px-3">
         <div class="row align-items-center pt-5">
-          <div class="col-sm-12 col-md-8 d-flex flex-column">
-            <h1 class="display-2 fw-bold pb-3 text-primary">Expertos en Seguros</h1>
-            <p class="text-white">texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba</p>
+          <div class="col-10 col-md-8 d-flex flex-column">
+            
+              <p class="text-white fs-3 p-slider">Asegura tu 
+                <span class="slide-span">auto</span>
+                <span class="slide-span">casa</span>
+                <span class="slide-span">moto</span>
+                <span class="slide-span">perro</span>
+              </p>
+            
+              
+            <h1 class="display-1 fw-bold pb-3 text-white mb-5">Somos <span class="underline-span">expertos</span> en seguros.</h1>
             <div>
-              <button type="button" class="btn btn-lg btn-primary px-5 py-2 shadow fw-bold">Ver Más</button>
-              <button type="button" class="btn btn-lg btn-secondary px-5 py-2 shadow fw-bold">Contactanos</button>
+              <button type="button" class="btn btn-lg btn-primary px-5 py-2 shadow fw-bold mb-3 me-3 border-2 border-dark">Ver Seguros</button>
+              <button type="button" class="btn btn-lg btn-outline-dark px-5 py-2 shadow fw-bold mb-3 border-dark border-2">Contactanos</button>
             </div>
           </div>
         </div>
@@ -76,52 +88,71 @@
 
     <!-- our services section -->
     <section id="servicios">
-      <div class="container">
-        <div class="titulo my-4">
-          <h2 class="animate__animated animate__fadeInUp animate__slow">Nuestros Seguros</h2>
-          <div class="linea bg-primary"></div>
+      <div class="container px-4 py-4">
+        <div class="text-center mb-4 mt-1">
+          <h2 class="display-3 fw-bold text-white"><span class="underline-titles-span">Seguros</span></h2>
         </div>
 
         <div class="row">
 
-          <!-- starts card -->
-          <div class="col-sm-12 col-md-6 col-lg-4 mx-auto my-2">
-            <div class="card h-100 shadow">
-              <img src="images/undraw_by_my_car_ttge.png" alt="" class="card-img-top">
-              <div class="card-body">
-                <h3 class="card-title">seguro inmobiliario</h3>
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, architecto! Officiis, fugiat tempore! Debitis, reiciendis tempore. Odit, tempore? Facere, totam.</p>
-                <button class="btn btn-primary">Ver Mas...</button>
-              </div>
+          <!-- starts services card -->
+          <div class="col-sm-12 col-md-6 col-lg-4 mx-auto my-4 text-white text-center">
+            <div class="service-icon">
+              <i class='bx bxs-car'></i>
             </div>
+            <div class="service-title fw-bold fs-4">Vehiculos</div>
+            <div class="service-desc fs-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, esse?</div>
           </div>
-        <!-- ends card -->
+          <!-- ends -->
+          
+          <!-- starts services card -->
+          <div class="col-sm-12 col-md-6 col-lg-4 mx-auto my-4 text-white text-center">
+            <div class="service-icon">
+              <i class='bx bx-male-female'></i>
+            </div>
+            <div class="service-title fw-bold fs-4">Personas</div>
+            <div class="service-desc fs-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, esse?</div>
+          </div>
+          <!-- ends -->
+          <!-- starts services card -->
+          <div class="col-sm-12 col-md-6 col-lg-4 mx-auto my-4 text-white text-center">
+            <div class="service-icon">
+              <i class='bx bxs-building-house' ></i>
+            </div>
+            <div class="service-title fw-bold fs-4">Empresas</div>
+            <div class="service-desc fs-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, esse?</div>
+          </div>
+          <!-- ends -->
+          <!-- starts services card -->
+          <div class="col-sm-12 col-md-6 col-lg-4 mx-auto my-4 text-white text-center">
+            <div class="service-icon">
+              <i class='bx bxs-dog'></i>
+            </div>
+            <div class="service-title fw-bold fs-4">Mascotas</div>
+            <div class="service-desc fs-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, esse?</div>
+          </div>
+          <!-- ends -->
+          <!-- starts services card -->
+          <div class="col-sm-12 col-md-6 col-lg-4 mx-auto my-4 text-white text-center">
+            <div class="service-icon">
+              <i class='bx bxs-home' ></i>
+            </div>
+            <div class="service-title fw-bold fs-4">Alquileres</div>
+            <div class="service-desc fs-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, esse?</div>
+          </div>
+          <!-- ends -->
+          <!-- starts services card -->
+          <div class="col-sm-12 col-md-6 col-lg-4 mx-auto my-4 text-white text-center">
+            <div class="service-icon">
+              <i class='bx bxs-tree-alt'></i>
+            </div>
+            <div class="service-title fw-bold fs-4">Agricola</div>
+            <div class="service-desc fs-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, esse?</div>
+          </div>
+          <!-- ends -->
+        
 
-        <!-- starts card -->
-        <div class="col-sm-12 col-md-6 col-lg-4 mx-auto my-2">
-          <div class="card h-100 shadow">
-            <img src="images/services-road.png" alt="" class="card-img-top">
-            <div class="card-body">
-              <h3 class="card-title text-center">seguro automotor</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, architecto! Officiis, fugiat tempore! Debitis, reiciendis tempore. Odit, tempore? Facere, totam.</p>
-              <button class="btn btn-primary">Ver Mas...</button>
-            </div>
-          </div>
-        </div>
-      <!-- ends card -->
-
-        <!-- starts card -->
-        <div class="col-sm-12 col-md-6 col-lg-4 mx-auto my-2">
-          <div class="card h-100 shadow">
-            <img src="images/services-work.png" alt="" class="card-img-top">
-            <div class="card-body">
-              <h3 class="card-title text-center">seguro para empresas</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, architecto! Officiis, fugiat tempore! Debitis, reiciendis tempore. Odit, tempore? Facere, totam.</p>
-              <button class="btn btn-primary">Ver Mas...</button>
-            </div>
-          </div>
-        </div>
-      <!-- ends card -->
+      
           
         </div>
       </div>
@@ -129,18 +160,20 @@
 
 
     <!-- brands section -->
-    <section id="marcas" class="bg-secondary">
-      <div class="container p-5 mt-4">
+    <section id="marcas">
+      <div class="container bg-white p-5 mt-4">
         <div class="row">
           <div class="col-sm-12 col-md-3">
             <h2 class="text-center pb-3">Trabajamos con las mejores marcas</h2>
           </div>
 
-          <div class="col-sm-12 col-md-9 d-flex justify-content-around flex-wrap">
-            <img src="images/examplelogo.png" alt="" class="img-fluid m-1">
-            <img src="images/examplelogo.png" alt="" class="img-fluid">
-            <img src="images/examplelogo.png" alt="" class="img-fluid">
-            <img src="images/examplelogo.png" alt="" class="img-fluid">
+          <div class="col-sm-12 col-md-9 d-flex justify-content-start flex-wrap">
+            <img src="images/marcas/descarga (1).jpg" alt="" class="img-fluid m-2">
+            <img src="images/marcas/descarga (1).png" alt="" class="img-fluid m-2">
+            <img src="images/marcas/descarga (2).jpg" alt="" class="img-fluid m-2">
+            <img src="images/marcas/descarga (2).png" alt="" class="img-fluid m-2">
+            <img src="images/marcas/descarga (3).png" alt="" class="img-fluid m-2">
+            <img src="images/marcas/descarga (4).png" alt="" class="img-fluid m-2">
             
           </div>
             
@@ -148,7 +181,6 @@
         </div>
       </div>
     </section>
-
 
     <!-- contact section -->
 
@@ -272,14 +304,49 @@
 
 
     
-    <!-- AOS animation script -->
-      <script src="bower_components/aos/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
     
     <!-- Bootstrap Bundle with Popper -->
     <script src="bootstrap/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
   
   </body>
 </html>
+
+
+<!-- starts card -->
+<div class="col-sm-12 col-md-6 col-lg-4 mx-auto my-2">
+  <div class="card h-100 shadow">
+    <div class="card-body">
+      <div class="img-container">
+        
+      </div>
+      <h3 class="card-title text-center">Seguros para Empresas</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, architecto! Officiis, fugiat tempore! Debitis, reiciendis tempore. Odit, tempore? Facere, totam.</p>
+      <button class="btn btn-primary">Ver Mas...</button>
+    </div>
+  </div>
+</div>
+<!-- ends card -->
+
+
+    <!-- brands section -->
+    <section id="marcas" class="bg-secondary">
+      <div class="container p-5 mt-4">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <h2 class="text-center pb-3">Trabajamos con las mejores marcas</h2>
+          </div>
+
+          <div class="col-sm-12 col-md-9 d-flex justify-content-around flex-wrap">
+            <img src="images/examplelogo.png" alt="" class="img-fluid m-1">
+            <img src="images/examplelogo.png" alt="" class="img-fluid">
+            <img src="images/examplelogo.png" alt="" class="img-fluid">
+            <img src="images/examplelogo.png" alt="" class="img-fluid">
+            
+          </div>
+            
+
+        </div>
+      </div>
+    </section>
+

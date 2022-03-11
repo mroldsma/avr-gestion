@@ -1,19 +1,17 @@
 // custom changes and new classes 
-$customcolor1: #420286;
-$customcolor2: #e2e2e2;
-$customcolor3: #420286;
-
-
-// CHANGING
-
-$primary: $customcolor1;
-$secondary: $customcolor2;
-$info: $customcolor3;
+$primary: #420286;
+$secondary: #e2e2e2;
+$info: #420286;
 // $warning,
 // $danger,
 // $success,
 // $light,
 // $dark
+
+$btn-border-radius: 0%;
+$btn-border-radius-sm: 0%;
+$btn-border-radius-lg: 0%;
+
 
 // bootstrap with variable and color changes 
 @import "../bootstrap/bootstrap/scss/bootstrap.scss";
