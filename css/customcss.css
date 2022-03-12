@@ -101,9 +101,6 @@ nav button a:hover{
   top: 79%;
 }
 
-/* //////////////////// */
-/* services section */
-/* //////////////////// */
 
 .underline-titles-span{
   position: relative;
@@ -134,6 +131,7 @@ nav button a:hover{
 
 #marcas .container{
   width: 90%;
+  border-radius: 5px;
 }
 
 .title-marca{
@@ -157,11 +155,9 @@ nav button a:hover{
   top: 80%;
 }
 
-/* #marcas img{
-  width: auto;
-  max-height: 3rem;
-} */
-
+/* //////////////////// */
+/* services section */
+/* //////////////////// */
 
 #servicios{
   background-image:linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url('/images/empresas.jpg');
@@ -172,6 +168,7 @@ nav button a:hover{
   position: relative;
   top: -10em;
   padding-top: 4em;
+  margin-bottom: -10em;
 }
 
 .service-icon{
@@ -199,26 +196,39 @@ nav button a:hover{
 }
 
 .service-icon:hover i{
-  font-size: 2.5rem;
+  font-size: 3rem;
+}
+
+.service-title{
+  text-transform: uppercase;
 }
 
 /* //////////////////// */
 /* contact section */
 /* //////////////////// */
 
-#contact{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/contact.jpg');
+#contacto{
+  /* background-image:radial-gradient(indigo, rgb(108, 0, 185)); */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  
 }
 
 .contact-info-icon{
-  height: 3em;
-  width: 3em;
-  border-radius: 50%;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 5px;
   font-size: 1.5em;
 }
+
+
+
+
+
+
+
+
 
 .iconos-footer{
   font-size: 3rem;
