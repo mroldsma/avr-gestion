@@ -20,16 +20,62 @@
 
   <body>
     
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
 
+    <section id="cotizador">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            
+            <form action="https://formspree.io/f/mbjwkrwn" method="POST">
+              
+              <label for="nombre" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control mb-3" id="nombre" placeholder="Su nombre">
+              <label for="telefono" class="form-label">Telefono</label>
+              <input type="number" class="form-control mb-3" id="telefono" placeholder="+54 11 0000-0000">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control mb-3" id="email" placeholder="ejemplo@email.com">
+              <label for="provincia" class="form-label">Provincia</label>
+              <select class="form-select mb-3" aria-label="Default select example" id="provincia">
+                <option selected>---</option>
+                <option value="1">CABA</option>
+                <option value="2">Buenos Aires</option>
+                <option value="3">Cordoba</option>
+              </select>
+              <label for="localidad" class="form-label">Localidad</label>
+              <select class="form-select mb-3" aria-label="Default select example" id="localidad">
+                <option selected>---</option>
+                <option value="1">Ezeiza</option>
+                <option value="2">Monte Grande</option>
+                <option value="3">El Jaguel</option>
+              </select>
 
+              <label for="marca" class="form-label">Marca</label>
+              <input type="text" class="form-control mb-3" id="marca" placeholder="Su marca">
+              <label for="modelo" class="form-label">Modelo</label>
+              <input type="text" class="form-control mb-3" id="modelo" placeholder="Su modelo">
+              <label for="version" class="form-label">Versión</label>
+              <input type="text" class="form-control mb-3" id="version" placeholder="Su version">
+              <label for="anio" class="form-label">Año</label>
+              <input type="number" class="form-control mb-3" id="anio" placeholder="Año del vehiculo">
+
+              <label for="combustible" class="form-label">Tipo de Combustible</label>
+              <select class="form-select mb-3" aria-label="Default select example" id="combustible">
+                <option selected>---</option>
+                <option value="1">GNC</option>
+                <option value="2">Nafta</option>
+                <option value="3">Diesel</option>
+              </select>
+
+              <label for="aclaraciones" class="form-label">Informacion adicional</label>
+              <textarea class="form-control mb-3" id="aclaraciones" rows="3"></textarea>
+    
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            
+            </form>
+          </div>
+        </div>
+      </div>
+      </section>
 
 
 
@@ -37,7 +83,7 @@
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="bootstrap/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
+    <script src="contact-form.js"></script>
   </body>
 
 </html>
