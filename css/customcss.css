@@ -119,6 +119,10 @@ nav button a:hover{
   top: 80%;
 }
 
+#hero button{
+  min-width: 250px;
+}
+
 /* //////////////////// */
 /* brands section */
 /* //////////////////// */

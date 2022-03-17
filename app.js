@@ -1,8 +1,8 @@
 const heroSpanSlide = document.querySelector('.p-slider').children;
 const spanLenght = heroSpanSlide.length;
 let index = 0;
-const spanInTimer = 3000;
-const spanOutTimer = 2800;
+const spanInTimer = 2000;
+const spanOutTimer = 1800;
 
 
 
