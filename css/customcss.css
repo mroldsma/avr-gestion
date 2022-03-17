@@ -212,11 +212,8 @@ nav button a:hover{
 /* //////////////////// */
 
 #contacto{
-  /* background-image:radial-gradient(indigo, rgb(108, 0, 185)); */
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
 }
 
 .contact-info-icon{
