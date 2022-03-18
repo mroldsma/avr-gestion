@@ -30,17 +30,5 @@ function animateHeroSpan(){
 }
 
 
-
-
-
 window.onload = animateHeroSpan;
 
-
-
-
-
-
-
-
-
-console.log(spanLenght)
