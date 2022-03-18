@@ -33,7 +33,7 @@
         <!-- TODO animaciones de los links del navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow">
       <div class="container">
-        <a class="navbar-brand fw-bold fs-6 ms-2" href="#"><span class="fs-2 me-2">AVR</span> Productora Asesora de Seguros</a>
+        <a class="navbar-brand fw-bold fs-6 ms-2 d-block" href="#"><span class="fs-2 me-2 d-block d-sm-inline">AVR</span>Productora Asesora de Seguros</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -65,17 +65,21 @@
     <section id="hero" class="mt-3 bg-secondary">
       <div class="container vh-100 d-flex px-3">
         <div class="row align-items-center pt-5">
-          <div class="col-10 col-md-10 d-flex flex-column">
+          <div class="col-12 col-md-10 d-flex flex-column">
             
               <p class="text-white fs-3 p-slider">Asegura tu 
                 <span class="slide-span">auto</span>
                 <span class="slide-span">casa</span>
+                <span class="slide-span">depto</span>
+                <!-- test!!!!!!!! -->
                 <span class="slide-span">departamento</span>
                 <span class="slide-span">moto</span>
-                <span class="slide-span">bicicleta</span>
+                <span class="slide-span">bici</span>
                 <span class="slide-span">vida</span>
                 <span class="slide-span">ganado</span>
                 <span class="slide-span">flota</span>
+                <span class="slide-span">PC</span>
+                <!-- test!!!!!!!! -->
                 <span class="slide-span">computadora</span>
                 <span class="slide-span">perro</span>
                 <span class="slide-span">gato</span>
@@ -100,39 +104,40 @@
           <h2 class="fw-bold text-dark">Trabajamos con las mejores marcas</h2>
         </div>
         
-        <div class="row gy-3">
+        <div class="row gy-3 gx-3">
 
-          <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-2 px-5">
-            <img src="images/marcas/logo asociart.jpg" alt="" class="img-fluid">
+          <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-2">
+            <img src="images/marcas/logo-nivel.webp" alt="" class="img-fluid">
           </div>
 
-            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-2 px-5">
+            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-2">
               <img src="images/marcas/logo-antartida.png" alt="" class="img-fluid">
             </div>
 
-          <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-2 px-5">
+          <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-2">
             <img src="images/marcas/logo-galeno.svg" alt="" class="img-fluid">
           </div>
 
-          <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-2 px-5">
+          <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-2">
             <img src="images/marcas/logo-galeno-art.svg" alt="" class="img-fluid">
           </div>
         </div>
 
         <div class="row gy-3">
-          <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-2 px-5">
-            <img src="images/marcas/logo-nivel.webp" alt="" class="img-fluid">
-          </div>
-
-            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-2 px-5">
+          
+            <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-2">
               <img src="images/marcas/logo-providencia.png" alt="" class="img-fluid">
             </div>
 
-          <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-2 px-5">
-            <img src="images/marcas/logo-rio-uruguay.svg" alt="" class="img-fluid">
+          <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-2">
+            <img src="images/marcas/logo-rio-uruguay.png" alt="" class="img-fluid">
           </div>
 
-          <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-2 px-5">
+          <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-2">
+            <img src="images/marcas/logo asociart.jpg" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-6 col-md-3 d-flex justify-content-center align-items-center mb-2">
             <img src="images/marcas/logo-libra.svg" alt="" class="img-fluid">
           </div>
 
@@ -208,9 +213,17 @@
       
           
         </div>
-        <div class="d-flex justify-content-end align-items-center">
+
+        
+        <div class="d-none d-sm-flex justify-content-end align-items-center">
           <button type="button" class="btn btn-lg btn-primary px-5 py-2 shadow fw-bold border-2 border-dark rounded-2 d-flex align-items-center">Ver todos los Seguros <i class='bx bx-chevrons-right' ></i></button>
         </div>
+
+        <div class="d-grid d-sm-none mx-auto">
+          <button type="button" class="btn btn-lg btn-primary px-2 py-2 shadow fw-bold border-2 border-dark rounded-2">Ver todos los Seguros <i class='bx bx-chevrons-right' ></i></button>
+        </div>
+
+      
       </div>
     </section>
 
@@ -333,8 +346,8 @@
     
     
     <!-- Bootstrap Bundle with Popper -->
-    <script src="bootstrap/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/app.js"></script>
   
   </body>
 </html>

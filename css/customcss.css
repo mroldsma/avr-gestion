@@ -29,7 +29,7 @@ nav button a:hover{
 #hero{
   background-image: radial-gradient(rgba(94, 45, 94, 0.2), rgba(0, 0, 0, 0.6)), url('/images/carousel2.jpg');
   background-size: cover;
-  background-attachment: fixed;
+  background-position: center;
 }
 
 #hero div h1{
@@ -164,10 +164,9 @@ nav button a:hover{
 /* //////////////////// */
 
 #servicios{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url('/images/empresas.jpg');
+  background-image:linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url('../images/empresas.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   padding-bottom: 5em;
   position: relative;
   top: -10em;
