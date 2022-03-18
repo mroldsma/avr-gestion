@@ -164,7 +164,8 @@ nav button a:hover{
 /* //////////////////// */
 
 #servicios{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url('../images/empresas.jpg');
+  /* background-image:linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url('../images/empresas.jpg'); */
+  background-image:url('../images/empresas.jpg');
   background-size: cover;
   background-position: center;
   padding-bottom: 5em;
