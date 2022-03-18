@@ -174,7 +174,7 @@ nav button a:hover{
 /* services section */
 /* //////////////////// */
 
-#servicios{
+#seguros{
   background-image:linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url('../images/empresas-large.jpg');
   background-size: cover;
   background-position: center;
@@ -186,7 +186,7 @@ nav button a:hover{
 }
 /* bg image for phone devices */
 @media screen and (max-width: 768px){
-  #servicios{
+  #seguros{
     background-image:linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url('../images/empresas-small.jpg');
   }
 }
@@ -223,6 +223,15 @@ nav button a:hover{
   text-transform: uppercase;
 }
 
+#seguros a{
+  text-decoration: none;
+  color: white;
+}
+
+#seguros a:hover{
+  color: white;
+}
+
 /* //////////////////// */
 /* contact section */
 /* //////////////////// */
@@ -249,5 +258,27 @@ nav button a:hover{
 
 
 /* //////////////////// */
-/* pagina de cotizador */
+/*  cotizador */
 /* //////////////////// */
+
+#cotizador{
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
+}
+
+.underline-title-span-cotizador{
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  text-shadow: 3px 3px 7px rgb(168, 167, 167);
+}
+
+.underline-title-span-cotizador::before{
+  content: "";
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  background-color: var(--indigo);
+  z-index: -1;
+  top: 80%;
+}

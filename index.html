@@ -44,15 +44,15 @@
               <a class="nav-link active" aria-current="page" href="/">Inicio</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link" href="/seguros.html">Seguros</a>
+              <a class="nav-link" href="#seguros">Seguros</a>
             </li>
             <li class="nav-item mx-3">
               <a class="nav-link" href="#contacto">Contacto</a>
             </li>
             
+            <button type="button" class="btn btn-primary text-center fw-bold mx-3 rounded-2 border-1 border-dark shadow"><a href="#cotizador">COTIZE SU VEHÍCULO</a></button>
           </ul>
           
-          <button type="button" class="btn btn-primary text-center fw-bold mx-3 rounded-2 border-1 border-dark shadow"><a href="cotizar.html">COTIZE AHORA</a></button>
         </div>
 
       </div>
@@ -143,7 +143,7 @@
 
 
     <!-- our services section -->
-    <section id="servicios">
+    <section id="seguros">
       <div class="container px-4">
         <div class="text-center mb-4 mt-1">
           <h2 class="display-3 fw-bold text-white"><span class="underline-titles-span">Seguros</span></h2>
@@ -212,7 +212,7 @@
 
         
         <div class="d-none d-sm-flex justify-content-end align-items-center">
-          <button type="button" class="btn btn-lg btn-primary px-5 py-2 shadow fw-bold border-2 border-dark rounded-2 d-flex align-items-center">Ver todos los Seguros <i class='bx bx-chevrons-right' ></i></button>
+          <button type="button" class="btn btn-lg btn-primary px-5 py-2 shadow fw-bold border-2 border-dark rounded-2 d-flex align-items-center"><a href="/seguros.html">Ver todos los Seguros <i class='bx bx-chevrons-right' ></i></a></button>
         </div>
 
         <div class="d-grid d-sm-none mx-auto">
@@ -223,6 +223,106 @@
       </div>
     </section>
 
+    <!-- section cotizador -->
+    <section id="cotizador">
+      <div class="container">
+
+        <div class="text-center mb-4">
+          <h2 class="display-4 fw-bold text-black"><span class="underline-title-span-cotizador">Cotize su Vehículo</span></h2>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center mb-3">
+            <h2 class="fs-2">Complete el formulario y nos contactaremos con ud. a la brevedad.</h2>
+            <h3 class="fs-5"><span class="fw-bold">*</span> Todos los campos son obligatorios.</h3>
+          </div>
+
+          <div class="col mb-3 fs-5">
+
+          <form action="https://formsubmit.co/4b2120682fcfe8898f76ecea4bd7a0b4" method="POST">
+              
+              <label for="nombre" class="form-label">Nombre Completo:</label>
+              <input type="text" class="form-control mb-3" id="nombre" placeholder="Su nombre" name="Nombre" required>
+            
+
+            
+              <label for="telefono" class="form-label">Teléfono:</label>
+              <input type="number" class="form-control mb-3" id="telefono" placeholder="+54 11 0000-0000" name="Telefono" required>
+            
+
+            
+              <label for="email" class="form-label">E-mail:</label>
+              <input type="email" class="form-control mb-3" id="email" placeholder="ejemplo@email.com" name="Email" _replyto required>
+            
+
+              <label for="provincia" class="form-label">Provincia:</label>
+              <select class="form-select mb-3" aria-label="Default select example" id="provincia" name="Provincia" required>
+                <option value="CABA">CABA</option>
+                <option selected value="Buenos Aires">Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Ríos">Entre Ríos</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquén">Neuquén</option>
+                <option value="Río Negro">Río Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fé">Santa Fé</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                <option value="Tucumán">Tucumán</option>
+              </select>
+
+              <label for="localidad" class="form-label">Localidad:</label>
+              <input type="text" class="form-control mb-3" id="localidad" name="Localidad" placeholder="Localidad" required>
+
+              <label for="marca" class="form-label">Marca:</label>
+              <input type="text" name="Marca" class="form-control mb-3" id="marca" placeholder="Marca de su Vehículo" required>
+
+              <label for="modelo" class="form-label">Modelo:</label>
+              <input type="text" class="form-control mb-3" id="modelo" name="Modelo" placeholder="Modelo de su vehículo" required>
+
+              <label for="version" class="form-label">Versión:</label>
+              <input type="text" class="form-control mb-3" id="version" placeholder="Versión de su vehículo" name="Version" required>
+
+              <label for="anio" class="form-label">Año:</label>
+              <input type="number" class="form-control mb-3" id="anio" placeholder="Año de su vehículo" name="Año" required>
+
+              <label for="combustible" class="form-label">Tipo de Combustible:</label>
+              <select class="form-select mb-3" id="combustible" name="Tipo-de-combustible" required>
+                <option selected>---</option>
+                <option value="GNC">GNC</option>
+                <option value="Nafta">Nafta</option>
+                <option value="Diesel">Diesel</option>
+              </select>
+
+              <label for="info-adicional" class="form-label">Información Adicional:</label>
+              <textarea class="form-control mb-3" id="info-adicional" rows="3" name="Info-adicional" required></textarea>
+
+
+
+              <input type="hidden" name="_subject" value="-> Nueva solicitud de cotización">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_next" value="https://avr-gestion.vercel.app/thankyou.html">
+              <button type="submit" class="btn btn-primary d-block w-100 fw-bold fs-5">Enviar</button>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+      </section>
+
 
     <!-- contact section -->
 
@@ -230,7 +330,7 @@
       <div class="container">
         
         <div class="text-center mb-5">
-          <h2 class="display-4 fw-bold text-white"><span class="underline-titles-span">Contactenos</span></h2>
+          <h2 class="display-4 fw-bold text-white"><span class="underline-titles-span">Contáctenos</span></h2>
         </div>
         
         <div class="row justify-content-around">
@@ -268,7 +368,7 @@
                 <i class='bx bxs-phone text-white' ></i>
               </div>
               <div class="contact-info-text mx-4 mt-3 d-flex flex-column justify-content-center">
-                <h5 class="fw-bold">Telefono</h5>
+                <h5 class="fw-bold">Teléfono</h5>
                 <p>+54 11 2222-2222</p>
               </div>
             </div>
@@ -288,7 +388,7 @@
               <input name="Email" type="email" class="form-control" id="email" placeholder="email@ejemplo.com">
             </div>
             <div class="mb-3">
-              <label for="telefono" class="form-label fw-bold">Telefono</label>
+              <label for="telefono" class="form-label fw-bold">Teléfono</label>
               <input name="Telefono" type="text" class="form-control" id="telefono" placeholder="+54 (11) 0000-0000">
             </div>
             <div class="mb-3">
