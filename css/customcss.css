@@ -27,9 +27,16 @@ nav button a:hover{
 /* //////////////////// */
 
 #hero{
-  background-image: radial-gradient(rgba(94, 45, 94, 0.2), rgba(0, 0, 0, 0.6)), url('../images/carousel2resized.jpg');
+  background-image: radial-gradient(rgba(94, 45, 94, 0.2), rgba(0, 0, 0, 0.6)), url('../images/carousel2large.jpg');
   background-size: cover;
   background-position: center;
+}
+/* bg image for phone devices */
+@media screen and (max-width: 768px){
+  #hero{
+    background-image: radial-gradient(rgba(94, 45, 94, 0.2), rgba(0, 0, 0, 0.6)), url('../images/carousel2small.jpg');
+    
+  }
 }
 
 #hero div h1{
@@ -164,7 +171,7 @@ nav button a:hover{
 /* //////////////////// */
 
 #servicios{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url('../images/empresas.jpg');
+  background-image:linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url('../images/empresas-large.jpg');
   background-size: cover;
   background-position: center;
   padding-bottom: 5em;
@@ -172,6 +179,12 @@ nav button a:hover{
   top: -10em;
   padding-top: 4em;
   margin-bottom: -10em;
+}
+/* bg image for phone devices */
+@media screen and (max-width: 768px){
+  #servicios{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url('../images/empresas-small.jpg');
+  }
 }
 
 .service-icon{
