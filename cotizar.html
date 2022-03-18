@@ -36,7 +36,7 @@
               <input type="number" class="form-control mb-3" id="telefono" placeholder="+54 11 0000-0000" name="telefono" required>
 
               <label for="email" class="form-label">E-mail</label>
-              <input type="email" class="form-control mb-3" id="email" placeholder="ejemplo@email.com" name="email" required>
+              <input type="email" class="form-control mb-3" id="email" placeholder="ejemplo@email.com" name="email" _replyto required>
 
               <label for="provincia" class="form-label">Provincia</label>
               <select class="form-select mb-3" aria-label="Default select example" id="provincia" name="provincia">
@@ -46,6 +46,9 @@
                 <option value="3">Cordoba</option>
               </select>
 
+              <input type="hidden" name="_subject" value="Nuevo email de AVR Productora de Seguros!">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_next" value="./thankyou.html">
               <button type="submit" class="btn btn-primary">Enviar</button>
 
             </form>
