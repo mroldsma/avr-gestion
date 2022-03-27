@@ -8,6 +8,12 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 
+.relleno{
+  background-color: transparent;
+  width: 100%;
+  height: 4.5em;
+}
+
 /* //////////////////// */
 /* nav section */
 /* //////////////////// */
@@ -41,6 +47,11 @@ nav button a:hover{
     background-image: radial-gradient(rgba(94, 45, 94, 0.2), rgba(0, 0, 0, 0.6)), url('../images/carousel2small.jpg');
     
   }
+}
+
+#hero .container{
+  height: 100vh;
+  max-height: 900px;
 }
 
 #hero div h1{
@@ -239,6 +250,7 @@ nav button a:hover{
 #contacto{
   padding-top: 3.5em;
   padding-bottom: 3.5em;
+  background-color: rgb(246, 235, 255);
 }
 
 .contact-info-icon{
@@ -252,8 +264,18 @@ nav button a:hover{
 /* footer section */
 /* //////////////////// */
 
-.iconos-footer{
-  font-size: 3rem;
+.iconos-footer a i{
+  font-size: 2rem;
+  transition: .3s all;
+}
+.iconos-footer a i:hover{
+  font-size: 2.5rem;
+  color: var(--indigo);
+}
+
+#footer a{
+  text-decoration: none;
+  color: #fff;
 }
 
 
@@ -281,4 +303,27 @@ nav button a:hover{
   background-color: var(--indigo);
   z-index: -1;
   top: 80%;
+}
+
+#info-adicional{
+  height: 10em;
+}
+
+
+/* //////////////////// */
+/*  pagina de seguros  */
+/* //////////////////// */
+
+#cabecera{
+  background-image: radial-gradient(rgba(94, 45, 94, 0.2), rgba(0, 0, 0, 0.6)), url('../images/carousel3.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 20em;
+}
+
+#seguros-cta{
+  background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/contact.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 4em 0;
 }

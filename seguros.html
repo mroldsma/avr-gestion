@@ -1,14 +1,631 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-  <h1> pagina de seguros </h1>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap with color changes -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/customcss.css" />
+    <!-- boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+
+
+    <title>Seguros</title>
+  </head>
+
+  <body>
+
+    <!-- navbar  -->
+
+        <!-- TODO animaciones de AOS .. https://michalsnik.github.io/aos/ -->
+        <!-- TODO animaciones de los links del navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow">
+          <div class="container">
+            <a class="navbar-brand fw-bold fs-6 ms-2 d-block" href="#"><span class="fs-2 me-2 d-block d-sm-inline">AVR</span>Productora Asesora de Seguros</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="/">Inicio</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link active" aria-current="page" href="#seguros">Seguros</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                
+                <button type="button" class="btn btn-primary text-center fw-bold mx-3 rounded-2 border-1 border-dark shadow"><a href="#cotizador">COTIZE SU VEHÍCULO</a></button>
+              </ul>
+              
+            </div>
+    
+          </div>
+        </nav>
+
+        <!-- relleno del espacio del navbar -->
+        <div class="relleno"></div>
+
+        <!-- section seguros  -->
+    <div id="cabecera" class="container-fluid mb-4">
+      <div class="row h-100">
+        <div class="col">
+          <div
+            class="h-100 mb-4 mt-1 d-flex align-items-center justify-content-center"
+          >
+            <h2 class="display-3 fw-bold text-white">
+              <span class="underline-titles-span">Seguros</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+
+      <!--   TODO   AGREGAR CLASS COLLAPSED EN TODOS LOS ACCORDIONS !!!! -->
+
+
+
+      <!-- FILA 1 -->
+      <!-- columna 1 -->
+      <div class="row mb-4 gx-5">
+        <div class="col-md-6">
+        <div class="text-center"><h3 class="fw-bold"><i class='bx bxs-car bx-md' ></i> Vehiculos</h3></div>
+          <div class="accordion" id="accordion1">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button fw-bold collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion_autos"
+                  aria-expanded="true"
+                  aria-controls="accordion_autos"
+                >
+                  Autos, Camionetas y Camiones
+                </button>
+              </h2>
+              <div
+                id="accordion_autos"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordion1"
+              >
+                <div class="accordion-body">
+                  <p>
+                    <ul>
+                      <li>Responsabilidad Civil (RC)</li>
+                      <li>RC + Incendio Total + Robo Total + Destrucción Total</li>
+                      <li>RC + Pérdida Total por Accidente y Total y Parcial por Incendio y Robo o Hurto.</li>
+                      <li>Terceros Completos: Responsabilidad Civil + Pérdida Total por Accidente y Total y Parcial por Incendio y Robo o Hurto Sin Franquicia.</li>
+                      <li>Todo Riesgo con franquicia fija o porcentual.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion_motos"
+                  aria-expanded="false"
+                  aria-controls="accordion_motos"
+                >
+                  Motos
+                </button>
+              </h2>
+              <div
+                id="accordion_motos"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordion1"
+              >
+                <div class="accordion-body">
+                  <strong>Info</strong> Sobre los seguros
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion_bicicletas"
+                  aria-expanded="false"
+                  aria-controls="accordion_bicicletas"
+                >
+                  Bicicletas
+                </button>
+              </h2>
+              <div
+                id="accordion_bicicletas"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordion1"
+              >
+                <div class="accordion-body">
+                  <strong>Info</strong> Sobre los seguros
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- columna 2 -->
+        <div class="col-md-6">
+          <div class="text-center"><h3 class="fw-bold"><i class='bx bx-male-female bx-md' ></i> Personas</h3></div>
+          <div class="accordion" id="accordion2">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button fw-bold collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion_vida"
+                  aria-expanded="true"
+                  aria-controls="accordion_vida"
+                >
+                  Seguro de Vida
+                </button>
+              </h2>
+              <div
+                id="accordion_vida"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordion2"
+              >
+                <div class="accordion-body">
+                  <p>
+                    <ul>
+                      <li>Protección Individual o Familiar</li>
+                      <li>Seguro permanente o temporario</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion_viaje"
+                  aria-expanded="false"
+                  aria-controls="accordion_viaje"
+                >
+                  Seguro de Viaje
+                </button>
+              </h2>
+              <div
+                id="accordion_viaje"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordion2"
+              >
+                <div class="accordion-body">
+                  <strong>Info</strong> Sobre los seguros
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion_medicina"
+                  aria-expanded="false"
+                  aria-controls="accordion_medicina"
+                >
+                  Medicina Privada
+                </button>
+              </h2>
+              <div
+                id="accordion_medicina"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordion2"
+              >
+                <div class="accordion-body">
+                  <strong>Info</strong> Sobre los seguros
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FILA 2 -->
+      <!-- columna 1 -->
+      <div class="row mb-4 gx-5">
+        <div class="col-md-6">
+          <div class="text-center"><h3 class="fw-bold"><i class='bx bxs-building-house bx-md' ></i> Empresas</h3></div>
+          <div class="accordion" id="accordion3">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button fw-bold collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion_rcprofesionales"
+                  aria-expanded="true"
+                  aria-controls="accordion_rcprofesionales"
+                >
+                  RC Profesionales
+                </button>
+              </h2>
+              <div
+                id="accordion_rcprofesionales"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordion3"
+              >
+                <div class="accordion-body">
+                  <p>
+                    Responsabilidad Civil para:
+                    <ul>
+                      <li>Médicos</li>
+                      <li>Psicólogos</li>
+                      <li>Contadores</li>
+                      <li>Abogados</li>
+                      <li>Escribanos</li>
+                      <li>Kinesiólogos</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion_art"
+                  aria-expanded="false"
+                  aria-controls="accordion_art"
+                >
+                  ART
+                </button>
+              </h2>
+              <div
+                id="accordion_art"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordion3"
+              >
+                <div class="accordion-body">
+                  <strong>Info</strong> Sobre los seguros
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion_aparatosoficina"
+                  aria-expanded="false"
+                  aria-controls="accordion_aparatosoficina"
+                >
+                  Aparatos de Oficina
+                </button>
+              </h2>
+              <div
+                id="accordion_aparatosoficina"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordion3"
+              >
+                <div class="accordion-body">
+                  <strong>Info</strong> Sobre los seguros
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- columna 2 -->
+        <div class="col-md-6">
+          <div class="text-center"><h3 class="fw-bold"><i class='bx bxs-tree-alt bx-md' ></i> Agro</h3></div>
+          <div class="accordion" id="accordion5">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion_ganado"
+                  aria-expanded="true"
+                  aria-controls="accordion_ganado"
+                >
+                  Seguro de Ganado
+                </button>
+              </h2>
+              <div
+                id="accordion_ganado"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordion5"
+              >
+                <div class="accordion-body">
+                  <p>
+                    <ul>
+                      <li>Seguro para animales de engorde</li>
+                      <li>Seguro de vida de ganado bovino</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion_transporte"
+                  aria-expanded="false"
+                  aria-controls="accordion_transporte"
+                >
+                  Seguro de Transporte
+                </button>
+              </h2>
+              <div
+                id="accordion_transporte"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordion5"
+              >
+                <div class="accordion-body">
+                  <p>
+                    <ul>
+                      <li>Seguro contra daños a la marcadería</li>
+                      <li>Seguro contra robos</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion_maquinaria"
+                  aria-expanded="false"
+                  aria-controls="accordion_maquinaria"
+                >
+                  Seguro de Maquinária
+                </button>
+              </h2>
+              <div
+                id="accordion_maquinaria"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordion5"
+              >
+                <div class="accordion-body">
+                  <strong>Info</strong> Sobre los seguros
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- FILA 3 -->
+      <!-- columna 1 -->
+      <div class="row mb-5 gx-5">
+        
+        <div class="col-md-6">
+          <div class="text-center"><h3 class="fw-bold"><i class='bx bxs-home bx-md' ></i> Hogar</h3></div>
+          <div class="accordion" id="accordion4">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button fw-bold collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion_coberturahogar"
+                  aria-expanded="true"
+                  aria-controls="accordion_coberturahogar"
+                >
+                  Cobertura para el Hogar
+                </button>
+              </h2>
+              <div
+                id="accordion_coberturahogar"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordion4"
+              >
+                <div class="accordion-body">
+                  <p>
+                    <ul>
+                      <li>Daños totales por incendio, explosión o derrumbe</li>
+                      <li>Daños causados por naturaleza (rayos, terremoto, caída de arboles)</li>
+                      <li>Daños a aparatos tecnológicos</li>
+                      <li>Daños a vidrios y ventanas</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button fw-bold collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion_alquiler"
+                  aria-expanded="true"
+                  aria-controls="accordion_alquiler"
+                >
+                  Seguro de Alquiler
+                </button>
+              </h2>
+              <div
+                id="accordion_alquiler"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordion4"
+              >
+                <div class="accordion-body">
+                  <strong>Info</strong> Sobre los seguros
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion_incendios"
+                  aria-expanded="false"
+                  aria-controls="accordion_incendios"
+                >
+                  Seguro Contra Incendios
+                </button>
+              </h2>
+              <div
+                id="accordion_incendios"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordion4"
+              >
+                <div class="accordion-body">
+                  <strong>Info</strong> Sobre los seguros
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+
+        <!-- columna 2 -->
+        <div class="col-md-6">
+          <div class="text-center"><h3 class="fw-bold"><i class='bx bxs-dog bx-md' ></i> Mascotas</h3></div>
+          <div class="accordion" id="accordion6">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button fw-bold collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accordion_mascotas"
+                  aria-expanded="true"
+                  aria-controls="accordion_mascotas"
+                >
+                  Seguro para Mascotas
+                </button>
+              </h2>
+              <div
+                id="accordion_mascotas"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordion6"
+              >
+                <div class="accordion-body">
+                  <p>
+                    <ul>
+                      <li>Robo</li>
+                      <li>Muerte por accidente</li>
+                      <li>Gastos de veterinaria en caso de accidente</li>
+                      <li>Gastos por extravío</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+
+
+    <!-- call to action -->
+    <section id="seguros-cta">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col mb-5">
+            <div
+            class="mt-1 mb-2 d-flex align-items-center justify-content-center"
+          >
+              <h2 class="display-3 fw-bold text-white">
+                <span class="underline-titles-span">Cotize Ahora</span>
+              </h2>
+            </div>
+            <h3 class="fs-1 fw-bold text-white text-center">Elija la opción que prefiera:</h3>
+          </div>
+        </div>
+
+        <div class="row gx-5 d-flex align-items-center justify-content-around">
+          <div class="col-10 col-lg-4 d-flex align-items-center justify-content-center">
+            <button type="button" class="btn btn-lg btn-primary px-5 py-2 shadow fw-bold mb-3 me-3 rounded-2 w-100"><i class='bx bxl-whatsapp' ></i> Por Whatsapp</button>
+          </div>
+          <div class="col-10 col-lg-4 d-flex align-items-center justify-content-center">
+            <button type="button" class="btn btn-lg btn-primary px-5 py-2 shadow fw-bold mb-3 me-3 rounded-2 w-100"><i class='bx bx-envelope' ></i> Por E-mail</button>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- footer section -->
+    <section id="footer">
+      <div class="container-fluid bg-dark text-white">
+        <div class="row py-4">
+
+          <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+            <h4 class="fw-bold text-center fs-6"> <a href="/"><span class="fs-2">AVR</span> Productora Asesora de Seguros</h4></a>
+          </div>
+
+          <div class="iconos-footer col-12 col-md-4 d-flex justify-content-evenly align-items-center">
+              <a href="https://facebook.com" class="link-light"><i class="bi bi-facebook"></i></a>
+              <a href="https://instagram.com" class="link-light"><i class="bi bi-instagram"></i></a>
+              <a href="https://web.whatsapp.com" class="link-light"><i class="bi bi-whatsapp"></i></a>
+          </div>
+
+          <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+            <img src="images/logo_ssn_.png" alt="logo ssn" class="m-2">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
