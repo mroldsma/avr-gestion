@@ -249,9 +249,10 @@ nav button a:hover{
 /* //////////////////// */
 
 #contacto{
-  padding-top: 3.5em;
-  padding-bottom: 3.5em;
+  padding-top: 1.5em;
+  padding-bottom: 2em;
   background-color: rgb(246, 235, 255);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url('../images/cta-bg-resized.jpg');
 }
 
 .contact-info-icon{
@@ -289,8 +290,8 @@ nav button a:hover{
 /* //////////////////// */
 
 #cotizador{
-  padding-top: 3.5em;
-  padding-bottom: 3.5em;
+  padding-top: 1.5em;
+  padding-bottom: 2em;
 }
 
 .underline-title-span-cotizador{
