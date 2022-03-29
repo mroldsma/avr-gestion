@@ -202,6 +202,15 @@ nav button a:hover{
   }
 }
 
+#seguros a{
+  text-decoration: none;
+  color: white;
+}
+
+#seguros a:hover{
+  color: inherit;
+}
+
 .service-icon{
   display: inline-flex;
   justify-content: center;
@@ -234,14 +243,6 @@ nav button a:hover{
   text-transform: uppercase;
 }
 
-#seguros a{
-  text-decoration: none;
-  color: white;
-}
-
-#seguros a:hover{
-  color: white;
-}
 
 /* //////////////////// */
 /* contact section */
@@ -276,6 +277,10 @@ nav button a:hover{
 #footer a{
   text-decoration: none;
   color: #fff;
+}
+
+#footer a:hover{
+  color: inherit;
 }
 
 
@@ -315,14 +320,14 @@ nav button a:hover{
 /* //////////////////// */
 
 #cabecera{
-  background-image: radial-gradient(rgba(94, 45, 94, 0.2), rgba(0, 0, 0, 0.6)), url('../images/carousel3.jpg');
+  background-image: radial-gradient(rgba(94, 45, 94, 0.2), rgba(0, 0, 0, 0.6)), url('../images/seguros-header-redized.jpg');
   background-size: cover;
   background-position: center;
   height: 20em;
 }
 
 #seguros-cta{
-  background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/contact.jpg');
+  background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/cta-bg-resized.jpg');
   background-size: cover;
   background-position: center;
   padding: 4em 0;
