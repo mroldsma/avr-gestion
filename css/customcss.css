@@ -8,11 +8,15 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 
-.relleno{
-  background-color: transparent;
-  width: 100%;
-  height: 4.5em;
+a{
+  text-decoration: none;
+  color: #fff;
 }
+
+a:hover{
+  color: inherit;
+}
+
 
 /* //////////////////// */
 /* nav section */
@@ -273,15 +277,6 @@ nav button a:hover{
 .iconos-footer a i:hover{
   font-size: 2.5rem;
   color: var(--indigo);
-}
-
-#footer a{
-  text-decoration: none;
-  color: #fff;
-}
-
-#footer a:hover{
-  color: inherit;
 }
 
 
