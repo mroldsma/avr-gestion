@@ -318,7 +318,7 @@ nav button a:hover{
 #cabecera{
   background-image: radial-gradient(rgba(94, 45, 94, 0.2), rgba(0, 0, 0, 0.6)), url('../images/seguros-header-redized.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: 50% 30%;
   height: 20em;
 }
 
