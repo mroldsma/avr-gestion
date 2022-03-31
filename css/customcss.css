@@ -331,4 +331,10 @@ nav button a:hover{
   background-size: cover;
   background-position: center;
   padding: 4em 0;
+  background-color: var(--indigo);
+}
+
+#cta{
+  background-color: #B1A8B9;
+  text-shadow: 3px 3px 5px black
 }
